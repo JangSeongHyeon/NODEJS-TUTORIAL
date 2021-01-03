@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WEB1 - html</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                margin:0px;
+            }
+            a {
+                color:black;
+                text-decoration: none;
+            }
+            h1{
+                font-size: 70px;
+                text-align: center;
+                border-bottom:1px solid gray;
+                margin:0;
+                padding: 20px;
+            }
+
+            #grid ol{   
+                border-right: 1px solid gray;
+                width: 100px;
+                margin:0px;
+                padding: 20px;
+                padding-left: 25px;
+            }
+            /* id선택자와 클래스 선택자가 붙으면 id선택자가 이긴다 */
+            /* 클래스 선택자와 태그선택자가 붙으면 태그선택자가 이긴다 */
+
+
+            #grid{
+                display: grid;
+                grid-template-columns: 150px 1fr;
+            }
+
+            #article{
+                padding-left: 25px;
+            }
+
+            /* .active{
+                color: red;
+            } */
+            /* active가 saw보다 나중에 등장했기 때문에 red가 됨 */
+            /* 가까이에 있는 명령이 더 큰영향력을 가짐 */
+
+
+            /* 즉 보다 구체적인 것이 포괄적인 것보다 우선순위가 높다 */
+        </style>
+    </head>
+    
+    <body>
+        <h1><a href="index.html">WEB</a></h1>
+
+        <div id="grid">
+            <ol>
+                <li><a href="1.html">HTML</a></li>
+                <li><a href="2.html">CSS</a></li>
+                <li><a href="3.html">JavaScript</a></li>
+            </ol>
+    
+            <div id="article">
+                <h2>HTML이란 무엇인가</h2>
+                <a href="https://opentutorials.org/course/3084/18418" target="_blank" title="opentutorials">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong>
+                <p>1980년, 유럽 입자 물리 연구소(CERN)의 계약자였었던 물리학자 팀 버너스리가 HTML의 원형인 인콰이어를 제안하였다. 인콰이어는 CERN의 연구원들이 문서를 이용하고 공유하기 위한 체계였다. 1989년에 팀 버너스리는 인터넷 기반 하이퍼텍스트 체계를 제안하는 메모를 작성했다.[2] 버너스 리는 1990년 말에 HTML을 명시하고, 브라우저와 서버 소프트웨어를 작성했다. 그 해에 버너스리와 CERN 데이터 시스템 엔지니어 로버트 카일리아우와 함께 CERN측에 자금 지원을 요청하였지만, 이 프로젝트는 CERN으로부터 정식으로 채택 받지 못했다. 버너스리의 개인적인 기록[3] 에 1990년부터 "하이퍼텍스트가 사용되는 여러 분야의 일부"를 열거했고 백과사전을 그 목록의 첫 번째로 두었다.</p>
+                <br><br>
+                <img style="width:100%;" src="./coding.jpg">
+                Markup Language, HTML, 문화어: 초본문표식달기언어, 하이퍼본문표식달기언어)는 웹 페이지를 위한 지배적인 마크업 언어다. HTML은 제목, 단락, 목록 등과 같은 본문을 위한 구조적 의미를 나타내는 것뿐만 아니라 링크, 인용과 그 밖의 항목으로 구조적 문서를 만들 수 있는 방법을 제공한다. 그리고 이미지와 객체를 내장하고 대화형 양식을 생성하는 데 사용될 수 있다. HTML은 웹 페이지 콘텐츠 안의 꺾쇠 괄호에 둘러싸인 "태그"로 되어있는 HTML 요소 형태로 작성한다. HTML은 웹 브라우저와 같은 HTML 처리 장치의 행동에 영향을 주는 자바스크립트와 본문과 그 밖의 항목의 외관과 배치를 정의하는 CSS 같은 스크립트를 포함하거나 불러올 수 있다. HTML과 CSS 표준의 공동 책임자인 W3C는 명확하고 표상적인 마크업을 위하여 CSS의 사용을 권장한다.[1]
+            </div>
+        </div>
+
+
+    </body>
+</html>
