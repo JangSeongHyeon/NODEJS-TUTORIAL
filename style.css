@@ -1,0 +1,48 @@
+body{
+    margin:0px;
+}
+a {
+    color:black;
+    text-decoration: none;
+}
+h1{
+    font-size: 70px;
+    text-align: center;
+    border-bottom:1px solid gray;
+    margin:0;
+    padding: 20px;
+}
+
+#grid ol{   
+    border-right: 1px solid gray;
+    width: 100px;
+    margin:0px;
+    padding: 20px;
+    padding-left: 25px;
+}
+/* id선택자와 클래스 선택자가 붙으면 id선택자가 이긴다 */
+/* 클래스 선택자와 태그선택자가 붙으면 태그선택자가 이긴다 */
+
+
+#grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+#article{
+    padding-left: 25px;
+}
+
+@media(max-width: 800px) {
+    #grid{
+        display: block;
+    }
+
+    #grid ol{
+        border-right: none;
+    }
+
+    h1{
+        border-bottom: none;
+    }
+}
